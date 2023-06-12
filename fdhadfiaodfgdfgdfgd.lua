@@ -1,6 +1,10 @@
 wait(2)
 
-local queueonteleport = syn and syn.queue_on_teleport or queue_on_teleport or function() end
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/nicknemz/SpareClient/main/WhiteList.lua"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+for i,v in pairs(HWIDTable) do
+	if v == HWID then
+		local queueonteleport = syn and syn.queue_on_teleport or queue_on_teleport or function() end
 
 local telscrt = [[
     wait(4)
@@ -1162,3 +1166,8 @@ end
 coroutine.wrap(SEMNHL_fake_script)()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/nicknemz/Rew/main/Notyf_injected.lua", true))() 
+
+		else
+		game.Players.LocalPlayer.player:Kick("sorry but you are not whitelisted :(")
+	end
+end
