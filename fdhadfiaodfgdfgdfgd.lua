@@ -1,11 +1,26 @@
 wait(2)
 
-local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/nicknemz/SpareClient/main/WhiteList.lua", true))()
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-for i,v in pairs(HWIDTable) do
-	if v == HWID then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/uwubakadontkillme/dkdafafasfasdadamafaka/main/sdasdasasiudviausdva.lua", true))()
-		else
-		game.Players.LocalPlayer.player:Kick("sorry but you are not whitelisted :(")
-	end
+-- HWID Whitelist
+
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId();
+local WhitelistedHWIDs = {"8873BB6E-5893-41AA-AABB-BAE745C91391","2B509E2B-559A-4D36-A28F-DD57A2C9D68C"}
+local qNVAKkuwxNpqruLjSRHg = false
+
+function CheckHWID(hwidval)
+for _,whitelisted in pairs(WhitelistedHWIDs) do
+ if hwidval == whitelisted then
+     return true
+ elseif hwidval ~= whitelisted then
+     return false
+       end
+    end
+end
+
+qNVAKkuwxNpqruLjSRHg = CheckHWID(HWID)
+
+if (qNVAKkuwxNpqruLjSRHg == true) then
+	print("You are whitelisted! Loading script")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/uwubakadontkillme/dkdafafasfasdadamafaka/main/sdasdasasiudviausdva.lua", true))()
+else
+	game.Players.LocalPlayer.player:Kick("sorry but you are not whitelisted :(")
 end
