@@ -8,6 +8,8 @@ local qNVAKkuwxNpqruLjSRHg = false
 
 function CheckHWID(hwidval)
 for _,whitelisted in pairs(WhitelistedHWIDs) do
+ print(whitelisted)
+ print(hwidval)
  if hwidval == whitelisted then
      return true
  elseif hwidval ~= whitelisted then
@@ -15,6 +17,8 @@ for _,whitelisted in pairs(WhitelistedHWIDs) do
        end
     end
 end
+
+
 
 qNVAKkuwxNpqruLjSRHg = CheckHWID(HWID)
 
