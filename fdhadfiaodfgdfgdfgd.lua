@@ -3,7 +3,7 @@ wait(2)
 -- HWID Whitelist
 
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId();
-local WhitelistedHWIDs = {"8873BB6E-5893-41AA-AABB-BAE745C91391","2B509E2B-559A-4D36-A28F-DD57A2C9D68C"}
+local WhitelistedHWIDs = {"8873BB6E-5893-41AA-AABB-BAE745C91391","2B509E2B-559A-4D36-A28F-DD57A2C9D68C",}
 local qNVAKkuwxNpqruLjSRHg = false
 
 function CheckHWID(hwidval)
