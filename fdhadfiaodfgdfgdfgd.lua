@@ -22,5 +22,5 @@ if (qNVAKkuwxNpqruLjSRHg == true) then
 	print("You are whitelisted! Loading script")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/uwubakadontkillme/dkdafafasfasdadamafaka/main/sdasdasasiudviausdva.lua", true))()
 else
-	game.Players.LocalPlayer.player:Kick("sorry but you are not whitelisted :(")
+	game.Players.LocalPlayer:Kick("sorry but you are not whitelisted :(")
 end
